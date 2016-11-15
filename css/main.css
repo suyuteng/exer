@@ -1,0 +1,454 @@
+@charset "utf-8";
+/*css ducument*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
+	margin: 0;padding: 0;
+}
+body{
+	font-size: 14px;
+}
+img{
+	border: none;
+}
+li{
+	list-style: none;
+}
+input,select,textarea{
+	outline: none;
+}
+textarea{
+	resize: none;
+}
+a{
+	text-decoration: none;
+	color: #656565;
+}
+/*清除浮动*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*公用样式	*/
+.comstyle{
+	width: 1200px;
+	margin: 0 auto;
+}	
+/*header top	*/
+.header_top{
+	height: 32px;
+	background-color: #F1F1F1;
+	line-height: 32px;
+}
+.send{
+	background-image: url(../img/icon/1.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	
+	padding-right:16px;
+	
+}
+.right_area a:hover{
+	color: #C81623;
+}
+.right_area a{
+	margin-right: 10px;
+}
+.on{
+	color: #C81623;
+}
+/*header_logo样式*/
+.header_log{
+	height: 174px;
+	
+}
+.logo{
+	padding-top: 40px;
+}
+.serch_form{
+	width: 535px;
+	margin-top: 42px;
+	margin-left: 136px;
+	
+}
+.serch_text{
+	padding-left: 5px;
+	width: 425px;
+	height:35px;
+	line-height: 35px;	
+	border: 1px solid #FF3C3C;
+	vertical-align: top;
+}
+.serch_btn{
+	width: 100px;
+	height:37px;
+	line-height: 37px;	
+	background: #FF3C3C;
+	border: none;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	vertical-align: top;
+}
+.serch_form ul li {
+	margin-top: 5px;
+	display: inline-block;
+	margin-right:10px ;
+}
+.serch_form ul li a:hover{
+	color: #C81623;
+}
+.shopcar{
+	width:110px;
+	height: 46px;
+	border-radius: 5px;
+	background: #F7F7F7;
+	margin-top: 40px;
+	line-height: 46px;
+}
+.shop{
+	font-size: 14px;
+	font-weight: bold;
+	background-image: url(../img/icon/12.png) ;
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 22px;
+}
+/*headernav样式*/
+.header_nav{
+	height: 37px;
+	border-bottom: 2px solid #FD3F49;
+}
+.shop_items{
+	
+	position: relative;
+	width:209px;
+	height: 37px;
+	
+}
+.shop_items h3{	
+	background: #FF3C3C;
+	line-height: 37px;
+	text-align: center;
+	color: #fff;		
+}
+.lei{
+	background-image: url(../img/icon/4.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 18px;
+}
+.nav li{
+	display: inline-block;
+	line-height: 37px;
+	font-size: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.nav li a{
+	color: #333;
+}
+.nav li a:hover{
+	color: red;
+}
+.nav li .active{
+	color: red;
+}
+/*子菜单*/
+.content{
+	position: absolute;
+	left: 0;
+	top:37px;
+	background: #C23131;
+	height: 400px;
+	width: 100%;
+	z-index: 2;
+	overflow: hidden;
+	
+}
+.content ul{
+	
+}
+.content ul li {	
+	padding: 10px 15px;
+	border-bottom: 1px dashed #fff;
+	color: #fff;
+	
+	
+}
+.content ul li a{
+	color: #fff;
+}
+.content ul li a:hover{
+	color: red;
+}
+#content_wrap{
+	height: 402px;
+}
+/*单出菜单*/
+#subtitle{
+	
+	display: none;
+	position: absolute;
+	width: 710px;
+	top:2px;
+	left:208px;
+	border: 1px solid #ddd;	
+	background: white;
+	z-index: 99;		
+}
+#subtitle a{
+	color: #333;
+}
+#leftdiv{	
+	float: left;
+	width: 490px;
+	margin: 5px;
+}
+#rightdiv{				
+	float: right;
+	width: 200px;
+	margin: 5px;
+}
+#leftdiv dl{	
+	margin:10px 0px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	
+}
+#leftdiv dl dt{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: bold;
+	color: #FF0000;
+	height: 22px;
+	
+}
+#leftdiv dl dt a{
+	color: #333;
+	text-decoration: underline;
+}
+#leftdiv dl dd{
+	padding-left: 78px;
+	margin-top:-24px;
+	line-height: 24px;
+}
+#leftdiv dl dd a{
+	display: inline-block;
+	margin: 3px 0px;
+	border-left: 1px solid #FD3F49;
+	padding-left:5px ;
+}
+
+#leftdiv dl dd a:hover{
+	color: #FF0000;
+	
+}
+#leftdiv dl:last-child{
+	border-bottom: none;
+}
+/*#leftdiv dl{
+	display:block;	
+	margin:10px 0px;
+	border-bottom: 1px solid #C23131;
+	padding-bottom: 10px;	
+}
+#leftdiv dl dt{
+	vertical-align: top;
+	height: 22px;
+	width: 90px;
+	display: block;
+	float: left;	
+	text-align:left;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	overflow: hidden;	
+}
+#leftdiv dl dt a{
+	display: inline-block;
+	width: 100%;
+	line-height: 22px;
+	text-decoration: underline;
+	
+}
+#leftdiv dl dt a:hover{
+	color: #FF0000;
+}
+#leftdiv dl dd{
+	
+	width: 400px;
+	margin-left: 90px;	
+	vertical-align: top;
+}
+#leftdiv dl dd a{
+	border-left: 1px solid #C81623;
+	padding-left: 3px;
+	margin:3px 0px;
+	line-height: 22px;
+	display: inline-block;
+	
+	
+}*/
+/*小白快*/
+.content .lion span{
+	display: inline-block;
+	position: relative;
+	float: right;
+	height: 36px;
+	width: 20px;
+	top:-10px;
+	left:20px;
+	z-index: 20;
+	background-color: white;
+}
+#boxID{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 280px;
+}
+.box_right{
+	width: 240px;
+	height: 400px;
+	border: 1px solid #DDDDDD;
+	margin-left: 10px;
+}
+.kuaixun{
+	margin: 5px 10px;
+}
+.kuaixun h4{	
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 20px;
+		
+}
+.kuaixun li{
+	margin: 5px 0px;
+}
+.kuaixun li a:hover{
+	color: red;
+}
+.fuli{
+	margin-top: 10px;
+	width: 100%;
+
+	
+}
+.fuli h4{
+	border-bottom: 1px dashed #CCCCCC;
+	padding-bottom: 20px;
+}
+.fuli li{
+	
+	display: inline-block;
+	width:80px;
+	padding: 20px 0;
+	
+	
+}
+.fuli li a{
+	width: 100%;
+	display: inline-block;
+	
+	text-align: center;
+	
+}
+.fuli li a span{
+	margin-left: -40px;
+	
+}
+.fuli li a img{
+	margin-bottom: 20px;
+	
+}
+
+.loop1{
+	margin-top:40px ;
+}
+.loop_titel	{
+	clear: both;
+	height: 413px;
+		
+}
+.left p{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color:#FF4500 ;
+	padding-bottom: 2px;	
+}
+.right li{
+	display: inline-block;
+	border-right: 1px solid #C81623;
+	padding-right: 10px;
+	
+	
+}
+.right li:last-child{
+	border-right: none;
+	
+}
+.content_detail{
+	clear: both;
+	border-top:3px solid #FF4500;
+}
+/*loutidaohang*/
+#menu{
+	display: none;
+	position: fixed;
+	top:220px;
+	left:0px;	
+}
+#menu ul li a{
+	color: #333;
+	display: block;
+	margin: 5px 0;
+	width:60px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+#menu ul li a:hover,
+#menu ul li a.current{
+	color: #fff;
+	background: #0088BB;
+	
+}
+#content{
+		width: 1200px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	#content h1{
+		color: #f60;
+	}
+	#content .item{
+		padding: 20px;
+		margin-bottom:20px;
+		border: 1px dotted #0088bb;
+		text-align: center;
+	}
+	#content .item h2{
+		text-align: left;
+		border-bottom: 2px solid #0088BB;
+		margin-bottom: 10px;
+	}
+	
+	#content .item li{
+		display: inline;
+		margin-right: 10px;
+		text-align: center;
+	}
+	#content .item li a img{
+		border: none;
+		width: 230px;
+		height: 230px;
+	}
